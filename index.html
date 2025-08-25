@@ -8,13 +8,15 @@
     />
 
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./modal.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/favicon.svg"
     />
-    <script defer src="scripts.js"></script>
+    <script defer src="initialData.js"></script>
+    <script defer src="modal.js"></script>
     <title>Kanban Task Management</title>
   </head>
 
@@ -45,6 +47,16 @@
           </h2>
         </div>
       </header>
+
+      <!--Modal and its content-->
+
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      </div>
 
       <div class="container">
         <main class="card-column-main">
