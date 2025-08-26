@@ -2,13 +2,28 @@
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var task1 = document.getElementById("taskDiv1");
+var task2 = document.getElementById("taskDiv2");
+var task3 = document.getElementById("taskDiv3");
+var task4 = document.getElementById("taskDiv4");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal
-btn.onclick = function () {
+task1.onclick = function () {
+  modal.style.display = "block";
+};
+
+task2.onclick = function () {
+  modal.style.display = "block";
+};
+
+task3.onclick = function () {
+  modal.style.display = "block";
+};
+
+task4.onclick = function () {
   modal.style.display = "block";
 };
 
