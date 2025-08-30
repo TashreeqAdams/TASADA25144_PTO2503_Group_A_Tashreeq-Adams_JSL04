@@ -1,31 +1,16 @@
-// Get the modal
-const modal = document.getElementById("myModal");
+// // Get the modal
+// const modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-const task1 = document.getElementById("taskDiv1");
-const task2 = document.getElementById("taskDiv2");
-const task3 = document.getElementById("taskDiv3");
-const task4 = document.getElementById("taskDiv4");
+// // Get the button that opens the modal
+// const todoTaskEl = document.getElementById("task-div");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+// // Get the <span> element that closes the modal
+// var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal
-task1.onclick = function () {
-  modal.style.display = "block";
-};
-
-task2.onclick = function () {
-  modal.style.display = "block";
-};
-
-task3.onclick = function () {
-  modal.style.display = "block";
-};
-
-task4.onclick = function () {
-  modal.style.display = "block";
-};
+// // When the user clicks the button, open the modal
+// todoTaskEl.onclick = function () {
+//   modal.style.display = "block";
+// };
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {

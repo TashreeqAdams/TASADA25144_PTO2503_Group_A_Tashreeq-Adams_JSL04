@@ -50,14 +50,25 @@ const doingTaskContainer = document.getElementById("task-container-doing");
 const doneTaskContainer = document.getElementById("task-container-done");
 const modal = document.getElementById("myModal");
 
-// Search task object status for "todo", "doing" and "done"
+// Search task object status for "todo", "doing" and "done" (counter added for the numbers in the column headings)
+
+let todoCount = 0;
+let doingCount = 0;
+let doneCount = 0;
 
 initialTasks.forEach((task) => {
   if (task.status === "todo") {
     let newTodoTask = document.createElement("div");
     newTodoTask.innerText = task.title;
     newTodoTask.classList.add("task-div");
+    newTodoTask.addEventListener("click", (e) => {
+      document.getElementById("modal-task-title").innerText = task.title;
+      document.getElementById("modal-task-description").innerText =
+        task.description;
+      modal.style.display = "block";
+    });
     todoTaskContainer.appendChild(newTodoTask);
+    todoCount++;
   }
 
   if (task.status === "doing") {
@@ -65,6 +76,7 @@ initialTasks.forEach((task) => {
     newDoingTask.innerText = task.title;
     newDoingTask.classList.add("task-div");
     doingTaskContainer.appendChild(newDoingTask);
+    doingCount++;
   }
 
   if (task.status === "done") {
@@ -72,5 +84,22 @@ initialTasks.forEach((task) => {
     newDoneTask.innerText = task.title;
     newDoneTask.classList.add("task-div");
     doneTaskContainer.appendChild(newDoneTask);
+    doneCount++;
   }
 });
+
+document.getElementById("todo-column-header").innerText =
+  "TODO (" + todoCount + ")";
+document.getElementById("doing-column-header").innerText =
+  "DOING (" + doingCount + ")";
+document.getElementById("done-column-header").innerText =
+  "DONE (" + doneCount + ")";
+
+//
+
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+};
