@@ -75,6 +75,12 @@ initialTasks.forEach((task) => {
     let newDoingTask = document.createElement("div");
     newDoingTask.innerText = task.title;
     newDoingTask.classList.add("task-div");
+    newDoingTask.addEventListener("click", (e) => {
+      document.getElementById("modal-task-title").innerText = task.title;
+      document.getElementById("modal-task-description").innerText =
+        task.description;
+      modal.style.display = "block";
+    });
     doingTaskContainer.appendChild(newDoingTask);
     doingCount++;
   }
@@ -83,6 +89,12 @@ initialTasks.forEach((task) => {
     let newDoneTask = document.createElement("div");
     newDoneTask.innerText = task.title;
     newDoneTask.classList.add("task-div");
+    newDoneTask.addEventListener("click", (e) => {
+      document.getElementById("modal-task-title").innerText = task.title;
+      document.getElementById("modal-task-description").innerText =
+        task.description;
+      modal.style.display = "block";
+    });
     doneTaskContainer.appendChild(newDoneTask);
     doneCount++;
   }
