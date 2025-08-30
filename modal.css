@@ -15,29 +15,88 @@
   background-color: #fefefe;
   margin-top: 242px;
   margin-left: 456px;
-  padding: 20px;
   width: 600px;
   height: 415px;
   border-radius: 6px;
+  padding-left: 25px;
 }
 
-.modal-content,
-h1 {
+.modal-content h1 {
   font-weight: 700;
   font-style: Bold;
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0px;
+  padding-top: 24px;
+  margin: 0;
 }
 
-.modal-content,
-p {
-  font-family: Plus Jakarta Sans;
+.modal-content h2 {
   font-weight: 700;
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0px;
   color: #828fa3;
+}
+
+#modal-task-description {
+  width: 551;
+  height: 113.88764190673828px;
+  opacity: 1;
+  border: solid 1px #828fa340;
+  border-radius: 4px;
+  font-family: Plus Jakarta Sans;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0px;
+  padding-left: 8px;
+  padding-top: 6.35px;
+}
+
+#modal-task-title {
+  padding-left: 8px;
+  padding-top: 8.82px;
+}
+
+.modal-status-heading {
+  padding-bottom: 8.33px;
+  padding-top: 24.47px;
+}
+
+.modal-content p {
+  width: 551;
+  height: 40.674156188964844;
+  opacity: 1;
+  border: solid 1px #828fa340;
+  border-radius: 4px;
+  font-family: Plus Jakarta Sans;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0px;
+}
+
+.modal-title-heading {
+  padding-top: 24.4px;
+}
+
+.modal-drop-down {
+  width: 551px;
+  height: 40.674156188964844px;
+  top: 23.39px;
+  opacity: 1;
+  font-family: Plus Jakarta Sans;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0px;
+  padding-left: 11px;
+  padding-top: 6.67px;
+  border: solid 1px #828fa340;
 }
 
 /* The Close Button */
@@ -46,6 +105,9 @@ p {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  padding-right: 28.15px;
+  padding-top: 19px;
+  height: 5px;
 }
 
 .close:hover,
@@ -55,22 +117,124 @@ p {
   cursor: pointer;
 }
 
-.title-input {
-  width: 551px;
-  height: 40.67px;
-  border-radius: 4px;
-  border-width: 1px;
+@media screen and (max-width: 1200) {
+  .modal-content {
+    margin-left: 300px;
+  }
 }
 
-.description-input {
-  width: 551px;
-  height: 113.89px;
-  border-width: 1px;
-  border-radius: 4px;
+@media screen and (max-width: 1056px) {
+  .modal-content {
+    margin-left: 200px;
+  }
 }
 
-.option-selector {
-  width: 551px;
-  height: 40.67px;
-  border-radius: 4px;
+@media screen and (max-width: 880px) {
+  .modal-content {
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 776px) {
+  .modal-content {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .modal-content {
+    margin-left: 45px;
+    width: 343px;
+    height: 410px;
+    top: 99px;
+    left: 12px;
+    opacity: 1;
+    border-radius: 6px;
+  }
+
+  #modal-task-title {
+    width: 295px;
+    height: 40px;
+    top: 23px;
+    opacity: 1;
+  }
+
+  #modal-task-description {
+    width: 295px;
+    height: 40px;
+    top: 23px;
+    opacity: 1;
+  }
+  .modal-drop-down {
+    width: 295px;
+    height: 40px;
+    top: 23px;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .modal-content {
+    margin-left: 12px;
+    width: 350px;
+    height: 410px;
+    top: 99px;
+    left: 12px;
+    opacity: 1;
+    border-radius: 6px;
+  }
+
+  #modal-task-title {
+    width: 295px;
+    height: 40px;
+    top: 23px;
+    opacity: 1;
+  }
+
+  #modal-task-description {
+    width: 295;
+    height: 40px;
+    top: 23px;
+    opacity: 1;
+  }
+}
+
+.modal-drop-down {
+  /* width: 295px; */
+  height: 40px;
+  top: 23px;
+  opacity: 1;
+}
+
+@media screen and (max-width: 320px) {
+  .modal-content {
+    margin-left: 12px;
+    width: 295px;
+    height: 410;
+    top: 99px;
+    left: 12px;
+    opacity: 1;
+    border-radius: 6px;
+  }
+
+  #modal-task-title {
+    width: 243px;
+    height: 40;
+    top: 23px;
+    opacity: 1;
+  }
+
+  #modal-task-description {
+    width: 243px;
+    height: 40;
+    top: 23px;
+    opacity: 1;
+  }
+}
+
+.modal-drop-down {
+  width: 243px;
+  height: 40;
+  top: 23px;
+  opacity: 1;
 }
