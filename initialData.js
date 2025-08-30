@@ -1,7 +1,3 @@
-const todoTask = document.getElementById(todoColumn);
-const doingTask = document.getElementById(doingTaskEl);
-const doneTask = document.getElementById(doneTaskEl);
-
 const initialTasks = [
   {
     id: 1,
@@ -46,3 +42,21 @@ const initialTasks = [
 ];
 
 console.log(initialTasks);
+
+// Initializing data
+
+const todoTaskContainer = document.getElementById("task-container-todo");
+const doingTaskContainer = document.getElementById("task-container-doing");
+const doneTaskContainer = document.getElementById("task-container-done");
+const modal = document.getElementById("myModal");
+
+// Search task object status for "todo", "doing" and "done"
+
+initialTasks.forEach((task) => {
+  if (task.status === "todo") {
+    let newTodoTask = document.createElement("div");
+    newTodoTask.innerText = task.title;
+    newTodoTask.classList.add("task-div");
+    todoTaskContainer.appendChild(newTodoTask);
+  }
+});
