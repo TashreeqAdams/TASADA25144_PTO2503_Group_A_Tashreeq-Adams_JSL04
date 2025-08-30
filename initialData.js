@@ -1,3 +1,7 @@
+const todoTask = document.getElementById(todoColumn);
+const doingTask = document.getElementById(doingTaskEl);
+const doneTask = document.getElementById(doneTaskEl);
+
 const initialTasks = [
   {
     id: 1,

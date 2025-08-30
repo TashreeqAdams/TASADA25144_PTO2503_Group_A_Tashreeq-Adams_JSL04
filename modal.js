@@ -1,11 +1,11 @@
 // Get the modal
-var modal = document.getElementById("myModal");
+const modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var task1 = document.getElementById("taskDiv1");
-var task2 = document.getElementById("taskDiv2");
-var task3 = document.getElementById("taskDiv3");
-var task4 = document.getElementById("taskDiv4");
+const task1 = document.getElementById("taskDiv1");
+const task2 = document.getElementById("taskDiv2");
+const task3 = document.getElementById("taskDiv3");
+const task4 = document.getElementById("taskDiv4");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
