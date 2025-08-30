@@ -59,4 +59,18 @@ initialTasks.forEach((task) => {
     newTodoTask.classList.add("task-div");
     todoTaskContainer.appendChild(newTodoTask);
   }
+
+  if (task.status === "doing") {
+    let newDoingTask = document.createElement("div");
+    newDoingTask.innerText = task.title;
+    newDoingTask.classList.add("task-div");
+    doingTaskContainer.appendChild(newDoingTask);
+  }
+
+  if (task.status === "done") {
+    let newDoneTask = document.createElement("div");
+    newDoneTask.innerText = task.title;
+    newDoneTask.classList.add("task-div");
+    doneTaskContainer.appendChild(newDoneTask);
+  }
 });
