@@ -2,7 +2,7 @@
 
 ## Project description
 
-This application dynamically displays tasks from a predefined dataset directly on the DOM, organizing them into the correct Kanban board columns based on their status. Users can click on any task to open a modal that allows viewing and modifying task details. The project emphasizes core JavaScript skills, including DOM manipulation, event handling, modular code structure, and creating a responsive user interface.
+This application dynamically displays tasks from a predefined dataset directly on the DOM, organizing them into the correct Kanban board columns based on their status. Users can click on any task to open a modal that allows viewing task details. The project emphasizes core JavaScript skills, including DOM manipulation, event handling, modular code structure, and creating a responsive user interface.
 
 ## Technologies used
 
