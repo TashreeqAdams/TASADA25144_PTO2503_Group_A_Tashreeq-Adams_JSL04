@@ -107,11 +107,10 @@ document.getElementById("doing-column-header").innerText =
 document.getElementById("done-column-header").innerText =
   "DONE (" + doneCount + ")";
 
-//
-
-var span = document.getElementsByClassName("close")[0];
-
 // When the user clicks on <span> (x), close the modal
+
+const span = document.getElementsByClassName("close")[0];
+
 span.onclick = function () {
   modal.style.display = "none";
 };

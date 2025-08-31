@@ -1,8 +1,8 @@
-# JSL03 Challenge - Console-Based Task Manager
+# JSL04 Challenge - DOM-Based Kanban Task Manager
 
 ## Project description
 
-This application allows users to contribute up to three new entries to a predefined list of tasks. Each entry is automatically assigned a unique ID and captures details through user input dialogs. Users can also view a filtered list showing only completed items. The project highlights fundamental JavaScript skills, including object handling, array operations, and basic user interaction using prompts and alerts.
+This application dynamically displays tasks from a predefined dataset directly on the DOM, organizing them into the correct Kanban board columns based on their status. Users can click on any task to open a modal that allows viewing and modifying task details. The project emphasizes core JavaScript skills, including DOM manipulation, event handling, modular code structure, and creating a responsive user interface.
 
 ## Technologies used
 
@@ -17,13 +17,13 @@ The project includes:
 
 The project includes:
 
-- Tasks are stored as objects within an array for clean, organized data handling.
-- Users can create up to three new tasks by entering a title, description, and status through interactive prompts.
-- Each task is automatically assigned a unique, incrementing ID based on the last item in the array.
-- When the task limit is reached, users are alerted with a message: "There are enough tasks on your board, please check them in the console."
-- Includes a function to filter and display only tasks marked with the status "done".
-- All tasks are printed to the browser console under a clear label for easy inspection.
-- Completed tasks are logged separately in the console under a "Completed Tasks" heading for quick access.
+- Tasks are dynamically generated from initial data and inserted into the DOM for real-time interaction.
+- Each task is automatically placed in the correct Kanban column: "To Do", "Doing", or "Done".
+- Clicking a task opens a modal displaying its details, for the task title and description.
+- The modal includes a dropdown for status selection, allowing users to update the task’s status seamlessly.
+- A close button is provided to exit the modal easily.
+- The modal design follows Figma guidelines, including a backdrop effect to maintain focus.
+- Fully responsive layout ensures the modal and board work smoothly on both desktop and mobile devices.
 
 ## How to Use This Project
 
